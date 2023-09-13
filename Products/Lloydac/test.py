@@ -24,4 +24,6 @@ def test_on_cloud(api_client_fixture):
         api_client.device_control("63DA0043EC70649000910C630000198CDAC9BD258", command)
 
 
+def test_on_cloud_1(common_fixture):
+    execute_cloud_test(common_fixture, {"H1000": 1}, "H1000")
 

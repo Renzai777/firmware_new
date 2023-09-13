@@ -40,27 +40,40 @@ def common_tcp_client(tcp_client_factory):
 
 
 @pytest.fixture(scope='session')
-def api_client_fixture(request):
-    environment, username, password = request.param  # Getting the parameterized values
-    api_client = None
-    setup_status = 'Not attempted'
-    teardown_status = 'Not attempted'
+def api_client_factory():
+    def make_api_client(environment, username, password):
+        api_client = None
+        setup_status = 'Not attempted'
 
-    try:
-        config = Config("QA")
-        api_client = ApiClient(config, environment)
-        api_client.login(username, password)
-        setup_status = 'Success'
-    except Exception as e:
-        setup_status = f'Failed: {e}'
-
-    yield setup_status, api_client
-
-    if api_client is not None:
         try:
-            api_client.close_connection()
-            teardown_status = 'Success'
+            config = Config("QA")
+            api_client = ApiClient(config, environment)
+            api_client.login(username, password)
+            setup_status = 'Success'
         except Exception as e:
-            teardown_status = f'Failed: {e}'
+            setup_status = f'Failed: {e}'
 
-    return setup_status, teardown_status
+        yield setup_status, api_client
+
+        if api_client is not None:
+            try:
+                api_client.close_connection()
+            except Exception as e:
+                pass
+
+    return make_api_client
+
+
+@pytest.fixture(scope='session')
+def common_fixture(api_client_factory):
+    with open("config.json", "r") as f:
+        config_data = json.load(f)
+    environment = config_data['api_client_fixture']['environment']
+    username = config_data['api_client_fixture']['username']
+    password = config_data['api_client_fixture']['password']
+    device_id = config_data['api_client_fixture']['device_id']
+
+    setup_status, api_client = next(api_client_factory(environment, username, password))
+
+    yield setup_status, api_client, device_id
+

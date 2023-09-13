@@ -23,13 +23,9 @@ def execute_cloud_test(api_client_tuple, command, telemetry_key):
 
     if setup_status == 'Success':
         print(f"Command: {command}")
-
         api_client.device_control(device_id, command)
         time.sleep(3)
-
         received_data = api_client.fetch_device_status(device_id)
-        print(f"Received Data : {received_data}")
-
         status, rx_data = CommonMethod.compare_telemetry(received_data, command, telemetry_key)
 
         print(f'status: {status}')
