@@ -1,0 +1,114 @@
+{
+    "MDNS_DETAILS": {
+        "TouchSw4ChV1_192.168.0.100": {
+            "addresses": "192.168.0.100",
+            "DeviceCapabilities": "17",
+            "UserId": "0c71ea74-f50d-469d-9f62-a70fe113cd02",
+            "HUID": "0128090008002B3000A30C630000184F703C40954",
+            "device_mcu": "esp32s2",
+            "ProductCode": "TouchSw4ChV1",
+            "ModelName": "Touch Switch",
+            "BrandName": "Crabtree",
+            "ProductType": "Touch Switch"
+        },
+        "HFanV1_192.168.1.100": {
+            "addresses": "192.168.1.100",
+            "DeviceCapabilities": "1",
+            "Var": "qa",
+            "DvcFWver": "0.8",
+            "DvcFrWVer": "2.1.9",
+            "HUID": "63DA0043EC70649000910C6300001E89F6D551108",
+            "device_mcu": "esp32",
+            "ProductCode": "HFanV1",
+            "ModelName": "HaloFan",
+            "BrandName": "Havells",
+            "ProductType": "HaloFan",
+            "UserId": "dc89828f-a3d8-4e02-a1b0-e0d49435f313"
+        },
+        "TFanV1_192.168.1.101": {
+            "addresses": "192.168.1.101",
+            "DeviceCapabilities": "17",
+            "Var": "qa",
+            "DvcFWver": "2.0.6",
+            "DvcFrWVer": "2.1.9",
+            "HUID": "45CA0043EC70649000910C6300001782184D6F270",
+            "device_mcu": "esp32",
+            "ProductCode": "TFanV1",
+            "ModelName": "Trinity",
+            "BrandName": "Havells",
+            "ProductType": "Fan",
+            "UserId": ""
+        },
+        "DimmerSw2ChV1_192.168.0.104": {
+            "addresses": "192.168.0.104",
+            "DeviceCapabilities": "17",
+            "UserId": "1eff3674-fbb1-4e47-aa6d-8769cba05e30",
+            "HUID": "0128230004002B3000A30C6300001A0764E8C8A8E",
+            "device_mcu": "esp32s2",
+            "ProductCode": "DimmerSw2ChV1",
+            "ModelName": "2 Channel Dimmer",
+            "BrandName": "Crabtree",
+            "ProductType": "Dimmer Switch"
+        },
+        "AirConditionerV1_192.168.0.103": {
+            "addresses": "192.168.0.103",
+            "DeviceCapabilities": "0001",
+            "Var": "qa",
+            "DvcFWver": "1.0.0",
+            "DvcFrWVer": "2.1.7",
+            "HUID": "63DA0043EC70649000910C6300001C8F09EC86BE0",
+            "device_mcu": "esp32",
+            "ProductCode": "AirConditionerV1",
+            "ModelName": "Grande",
+            "BrandName": "Lloyd",
+            "ProductType": "AirConditioner",
+            "UserId": "1eff3674-fbb1-4e47-aa6d-8769cba05e30"
+        },
+        "AirConditionerV1_192.168.0.108": {
+            "addresses": "192.168.0.108",
+            "DeviceCapabilities": "0001",
+            "Var": "qa",
+            "DvcFWver": "1.1.2",
+            "DvcFrWVer": "2.1.7",
+            "HUID": "63DA0043EC70649000910C630000198CDAC9BD258",
+            "device_mcu": "esp32",
+            "ProductCode": "AirConditionerV1",
+            "ModelName": "Grande",
+            "BrandName": "Lloyd",
+            "ProductType": "AirConditioner",
+            "UserId": "9181a4b9-9901-4558-9614-a7c717c6838d"
+        },
+        "EnergyAuditorV1_192.168.0.106": {
+            "addresses": "192.168.0.106",
+            "DeviceCapabilities": "1",
+            "Var": "qa",
+            "DvcFWver": "0.7.6",
+            "DvcFrWVer": "2.1.9",
+            "HUID": "3390EB2BC2B190B08021984119E05A1B5C57EC",
+            "device_mcu": "esp32",
+            "ProductCode": "EnergyAuditorV1",
+            "ModelName": "Energy Auditor",
+            "BrandName": "Havells",
+            "ProductType": "Energy Auditor",
+            "UserId": "1eff3674-fbb1-4e47-aa6d-8769cba05e30"
+        },
+        "EnergyAuditorV1_192.168.0.111": {
+            "addresses": "192.168.0.111",
+            "DeviceCapabilities": "1",
+            "Var": "prod",
+            "DvcFWver": "0.7.1",
+            "DvcFrWVer": "2.1.9",
+            "HUID": "3390EB2BC2B190B08021984118449782184E415A8",
+            "device_mcu": "esp32",
+            "ProductCode": "EnergyAuditorV1",
+            "ModelName": "Energy Auditor",
+            "BrandName": "Havells",
+            "ProductType": "Energy Auditor",
+            "UserId": "4e39cef3-e137-452b-a8bf-9f3956c6292b"
+        }
+    },
+    "DEVICE_IDS": {
+        "AdoniaWHV2": "63DA0043EC70649000910C6300001C4DEE20B91CC"
+    },
+    "ACCESS_TOKEN": "eyJraWQiOiJFZ3hwYnQxMFNoWU11VnpHaktKdVBSRCtodXJQNWplOElMQjc0ZFkydG5vPSIsImFsZyI6IlJTMjU2In0.eyJzdWIiOiI5MTgxYTRiOS05OTAxLTQ1NTgtOTYxNC1hN2M3MTdjNjgzOGQiLCJkZXZpY2Vfa2V5IjoiYXAtc291dGgtMV9iM2E3MTRjMy1iY2RiLTQ2NTUtOGFhYS02NWI0ZTc4NDY2NTAiLCJpc3MiOiJodHRwczpcL1wvY29nbml0by1pZHAuYXAtc291dGgtMS5hbWF6b25hd3MuY29tXC9hcC1zb3V0aC0xX0c5a1ozSnFIRiIsImNsaWVudF9pZCI6IjFwc2N1MzU3M3ZuYzVnNnNlZ20wazlsaGk4Iiwib3JpZ2luX2p0aSI6ImY4YjcyM2QyLWUzMTMtNDEwYi05YjNiLTk2MTgyMDAzNDhlYSIsInRva2VuX3VzZSI6ImFjY2VzcyIsInNjb3BlIjoiYXdzLmNvZ25pdG8uc2lnbmluLnVzZXIuYWRtaW4iLCJhdXRoX3RpbWUiOjE2OTQ1OTc5NTYsImV4cCI6MTY5NDU5ODU1NiwiaWF0IjoxNjk0NTk3OTU2LCJqdGkiOiJiNmFmMDRlNi01NjE5LTRlMmItOTc3Zi1kMDgyOWM1YzRmYjMiLCJ1c2VybmFtZSI6IjkxODFhNGI5LTk5MDEtNDU1OC05NjE0LWE3YzcxN2M2ODM4ZCJ9.VU_FknxbOydww1Rf2XbsDvwZ-sJ47CPyj5fKByFQwMTupAt0OIkLXs2UgWlns_Xf-kMdm1OgXtk8Dh6VzzOT8ZUeqqsgN6mpl3gJKPDB8piOCzoPshsk-wwQHYWAbiBnKFA30Az-uiJyA6eIkFetTg68gAEPlTOWvWtEFc8UjiiiLw0EtBS6hnMP7Uqc2tOMOJaRiEprjcbcV27t_jLqW79sUpCJ6jCmfP3cM7uOWI3lhFs3rKJSUy29tO7TDLKG-wnaTWlCK7urATXaelI4blRpaPCMwZ6qz8iqMiH-HGq21NHk1yUYLGqMpqS-TjkwEuIrqCnla9_bEED2woIylA"
+}

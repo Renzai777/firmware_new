@@ -1,0 +1,65 @@
+{
+  "egarshi_aura": {
+    "DEVICE_ID_UID": {
+      "description": "HUID of the Device",
+      "value": "DEVID"
+    },
+    "PRODUCT_CODE_UID": {
+      "description": "EagarshiFanV1/V2",
+      "value": "PRODUCTCODE"
+    },
+    "DEVICE_POWER_UID": {
+      "description": "Control the power of the Device",
+      "value": "H1000",
+      "DEVICE_POWER_ON": "{\"H1000\":1}",
+      "DEVICE_POWER_OFF": "{\"H1000\":0}"
+    },
+    "FAN_SPEED_UID": {
+      "description": "Control the Fan Speed",
+      "value": "H1003",
+      "FAN_SPEED_1": "{\"H1003\":1}",
+      "FAN_SPEED_2": "{\"H1003\":2}",
+      "FAN_SPEED_3": "{\"H1003\":3}",
+      "FAN_SPEED_4": "{\"H1003\":4}",
+      "FAN_SPEED_5": "{\"H1003\":5}",
+      "FAN_SPEED_OFF": "{\"H1003\":0}"
+    },
+    "FAN_POWER_UID": {
+      "description": "Control the Fan Power",
+      "value": "H1007",
+      "FAN_POWER_ON": "{\"H1007\":1}",
+      "FAN_POWER_OFF": "{\"H1007\":0}"
+    },
+    "MAIN_LIGHT_POWER_UID": {
+      "description": "Control the Main Light Power",
+      "value": "H1008",
+      "MAIN_LIGHT_POWER_ON": "{\"H1008\":1}",
+      "MAIN_LIGHT_POWER_OFF": "{\"H1008\":0}"
+    },
+    "MAIN_LIGHT_INTENSITY_UID": {
+      "description": "Control the Main Light Intensity",
+      "value": "H100B",
+      "MAIN_LIGHT_INTENSITY_1": "{\"H100B\":1}",
+      "MAIN_LIGHT_INTENSITY_2": "{\"H100B\":2}",
+      "MAIN_LIGHT_INTENSITY_3": "{\"H100B\":3}",
+      "MAIN_LIGHT_INTENSITY_4": "{\"H100B\":4}",
+      "MAIN_LIGHT_INTENSITY_5": "{\"H100B\":5}",
+      "MAIN_LIGHT_INTENSITY_OFF": "{\"H100B\":0}"
+    },
+    "MAIN_LIGHT_CCT_UID": {
+      "description": "Control the Main Light CCT",
+      "value": "H100C",
+      "MAIN_LIGHT_CCT_WARM": "{\"H100C\":0}",
+      "MAIN_LIGHT_CCT_COOL": "{\"H100C\":1}",
+      "MAIN_LIGHT_CCT_NATURAL": "{\"H100C\":2}"
+    },
+    "SWITCH_OFF_TIMER_FAN_UID": {
+      "description": "Control the Switch Off Timer Fan",
+      "value": "H2000"
+    },
+    "ERROR_UID": {
+      "description": "Error log of the Device",
+      "value": "H2100"
+    }
+  }
+}

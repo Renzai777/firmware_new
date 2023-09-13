@@ -1,0 +1,134 @@
+{
+  "lloyd_ac": {
+    "POWER_CONTROL_UID": {
+      "description": "Control the power of the AC",
+      "value": "H1000",
+      "POWER_CONTROL_ON": "{\"H1000\":1}",
+      "POWER_CONTROL_OFF": "{\"H1000\":0}"
+    },
+    "VERTICAL_SWING_UID": {
+      "description": "Control the vertical swing of the AC",
+      "value": "H1004",
+      "VERTICAL_SWING_ON": "{\"H1004\":0}",
+      "VERTICAL_SWING_OFF": "{\"H1004\":1}",
+      "VERTICAL_SWING_POSITION1": "{\"H1004\":1}",
+      "VERTICAL_SWING_POSITION2": "{\"H1004\":2}",
+      "VERTICAL_SWING_POSITION3": "{\"H1004\":3}",
+      "VERTICAL_SWING_POSITION4": "{\"H1004\":4}",
+      "VERTICAL_SWING_POSITION5": "{\"H1004\":5}",
+      "VERTICAL_SWING_AUTO_POSITION": "{\"H1005\":0}"
+    },
+    "HORIZONTAL_SWING_UID": {
+      "description": "Control the horizontal swing of the AC",
+      "value": "H1005",
+      "HORIZONTAL_SWING_ON": "{\"H1005\":0}",
+      "HORIZONTAL_SWING_OFF": "{\"H1005\":1}"
+    },
+    "TURBO_UID": {
+      "description": "Control the turbo mode of the AC",
+      "value": "H3000",
+      "TURN_ON_TURBO": "{\"H3000\":1}",
+      "TURN_OFF_TURBO": "{\"H3000\":0}"
+    },
+    "SLEEP_UID": {
+      "description": "Control the sleep mode of the AC",
+      "value": "H3003",
+      "TURN_ON_SLEEP": "{\"H3003\":1}",
+      "TURN_OFF_SLEEP": "{\"H3003\":0}"
+    },
+    "TIMER_ON_UID": {
+      "description": "Control the timer ON setting of the AC",
+      "value": "H2002",
+      "TURN_ON_TIMER": "{\"H2002\":1}"
+    },
+    "TURN_OFF_UID": {
+      "description": "Control the turn-off timer of the AC",
+      "value": "H2000",
+      "TURN_OFF_TIMER": "{\"H2000\":0}"
+    },
+    "CHILDLOCK_UID": {
+      "description": "Control the child lock feature of the AC",
+      "value": "H3002",
+      "TURN_ON_CHILDLOCK": "{\"H3002\":1}",
+      "TURN_OFF_CHILDLOCK": "{\"H3002\":0}"
+    },
+    "DISPLAY_UID": {
+      "description": "Control the display power of the AC",
+      "value": "H3006",
+      "TURN_ON_DISPLAY": "{\"H3006\":1}",
+      "TURN_OFF_DISPLAY": "{\"H3006\":0}"
+    },
+    "TEMPERATURE_CONTROL_UID": {
+      "description": "Control the temperature setting of the AC",
+      "value": "H1001",
+      "TEMPERATURE_CONTROL_16": "{\"H1001\":16}",
+      "TEMPERATURE_CONTROL_17": "{\"H1001\":17}",
+      "TEMPERATURE_CONTROL_18": "{\"H1001\":18}",
+      "TEMPERATURE_CONTROL_19": "{\"H1001\":19}",
+      "TEMPERATURE_CONTROL_20": "{\"H1001\":20}",
+      "TEMPERATURE_CONTROL_21": "{\"H1001\":21}",
+      "TEMPERATURE_CONTROL_22": "{\"H1001\":22}",
+      "TEMPERATURE_CONTROL_23": "{\"H1001\":23}",
+      "TEMPERATURE_CONTROL_24": "{\"H1001\":24}",
+      "TEMPERATURE_CONTROL_25": "{\"H1001\":25}",
+      "TEMPERATURE_CONTROL_26": "{\"H1001\":26}",
+      "TEMPERATURE_CONTROL_27": "{\"H1001\":27}",
+      "TEMPERATURE_CONTROL_28": "{\"H1001\":28}",
+      "TEMPERATURE_CONTROL_29": "{\"H1001\":29}"
+    },
+    "TURBO_MODE": {
+      "description": "Turbo mode setting of the AC",
+      "value": "H3000"
+    },
+    "ECO_MODE": {
+      "description": "Eco mode setting of the AC",
+      "value": "H3001",
+      "TURN_ON_ECO": "{\"H3001\":1}",
+      "TURN_OFF_ECO": "{\"H3001\":0}"
+    },
+    "SLEEP_MODE": {
+      "description": "Sleep mode setting of the AC",
+      "value": "H3003"
+    },
+    "DISPLAY_POWER": {
+      "description": "Display power setting of the AC",
+      "value": "H3006"
+    },
+    "SWITCH_OFF_TIMER_UID": {
+      "description": "Control the switch-off timer of the AC",
+      "value": "H2000"
+    },
+    "SWITCH_ON_TIME_UID": {
+      "description": "Control the switch-on time of the AC",
+      "value": "H400F"
+    },
+    "SWITCH_ON_REMAINING_TIME_UID": {
+      "description": "Control the switch-on remaining time of the AC",
+      "value": "H5000"
+    },
+    "TEMP_SMART_MODE_UID": {
+      "description": "Control the temperature smart mode of the AC",
+      "value": "H5003"
+    },
+    "ERRORS_UID": {
+      "description": "Error log of the AC",
+      "value": "H2100"
+    },
+    "HEATING_CUTOFF_UID": {
+      "description": "Control the heating cutoff feature of the AC",
+      "value": "H5002"
+    },
+    "IDU_FAN_SPEED_UID": "H1003",
+    "FAN_SPEED_LOW": "{\"H1003\":0}",
+    "FAN_SPEED_MID": "{\"H1003\":1}",
+    "FAN_SPEED_HIGH": "{\"H1003\":2}",
+    "FAN_SPEED_AUTO": "{\"H1003\":3}",
+    "FAN_SPEED_SILENT": "{\"H1003\":4}",
+    "FIVE_IN_ONE_MODE_UID": "H1003",
+    "SET_CAPACITY_CA": "{\"H1003\":4}",
+    "SET_CAPACITY_C1": "{\"H1003\":4}",
+    "SET_CAPACITY_C2": "{\"H1003\":4}",
+    "SET_CAPACITY_C3": "{\"H1003\":4}",
+    "SET_CAPACITY_C4": "{\"H1003\":4}"
+  }
+}

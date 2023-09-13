@@ -1,0 +1,11 @@
+{
+  "tcp_client": {
+    "ip": "192.168.0.108"
+  },
+  "api_client_fixture": {
+    "environment": "QA",
+    "username": "+917387342890",
+    "password": "986040",
+    "device_id": "63DA0043EC70649000910C630000198CDAC9BD258"
+  }
+}

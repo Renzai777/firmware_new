@@ -1,0 +1,140 @@
+{
+    "QA": {
+        "URL": "iotqa.havellsiot.com",
+        "PRODUCT_LIST": [
+            "smart_ac",
+            "smart_fan",
+            "smart_adonia",
+            "water_heater_droid",
+            "water_heater_v2_ac_type",
+            "trinity_fan",
+            "air_purifier",
+            "stealth_fan",
+            "carnesia_fan"
+        ],
+        "MQTT_SETTINGS": {
+            "HIFE_LOCALMODE_PORT": 8888,
+            "HIFE_MQTT_PORT": 8883,
+            "HIFE_MQTT_CA_CRT": "../gtest/hife-testconf/cert/ca.crt",
+            "HIFE_MQTT_CLIENT_CRT": "",
+            "HIFE_MQTT_CLIENT_KEY": ""
+        },
+        "IOT_HUB_SETTINGS": {
+            "IOT_HUB_CONNECTION_STRING": "HostName=AZR-QA-IoTHub.azure-devices.net;SharedAccessKeyName=OTAWriteConfig;SharedAccessKey=YmTBm+7YjD3UkGYsqRm1m282Lq3sQ4pj5laEkyLajro="
+        },
+        "BLOB_STORAGE_SETTINGS": {
+            "STORAGE_ACCOUNT_NAME": "qaotasa",
+            "ACCOUNT_ACCESS_KEY": "5lmFHUeh2ZA4WH6a3L6Aygnmg4pRqrL4hziZ6lVA/1TGEvG+xOQpVYZYarY4gZj7ypaYYuqGVeNc4BX612WDkw==",
+            "BLOB_CONNECTION_STRING": "DefaultEndpointsProtocol=https;AccountName=qaotasa;AccountKey=5lmFHUeh2ZA4WH6a3L6Aygnmg4pRqrL4hziZ6lVA/1TGEvG+xOQpVYZYarY4gZj7ypaYYuqGVeNc4BX612WDkw==;EndpointSuffix=core.windows.net"
+        },
+        "USER_LOGIN_CREDENTIALS": {
+            "USER_1": "+917387342890",
+            "PASSWORD_1": "986040",
+            "USER_2": "+919032562338",
+            "PASSWORD_2": "123456"
+        },
+        "WIFI_SETTINGS": {
+            "INTERFACE": "wlp0s20f3",
+            "PASSWORD": "havells@12345",
+            "ESSID": "Validation",
+            "BSSID": "30:DE:4B:5B:6D:C0"
+        },
+        "KEYS": {
+          "keycid1": "TefuRRMZZMwdj_eRtXmuk8ofItc7CJltVirXJU4Qa0Y=",
+          "keycid2": "e1mz5NeVOj78GmP8z6J4VveY-fWZil6VUqq1DBj1Y3M=",
+          "cid": "gAAAAABiHfKgBQLH-qMtPV2ASPT-ZYJHuRa7hoRIga1bycmyGEHue0mNbpx65GH0Z7xtUBmEpLY66-AkyfNOKeydRmu50a8czXbO8N4kL3Li20nKFnVKdVFF69MHCST2S3OUXHbUavZwz-Yp9yqIwFAwtEjfpYpq9pIB6Jy_Wiem-ZeI9bywnbmGIHLoiz0kVAvtZQVUCzjqt7R-_WhrEXxo-U2ude-ew7_1iinP2jvQaK21ztZHaC4=",
+          "csrt": "gAAAAABiHfoFmvqVYyshnqoOgTxb4GvtnD7KJoh_NwoKKUbh5es6ATzVTutuf6SVrKYHvZ2f3Qgu48kLASI34Qk4nZ-lpjxiBP0I49mf8Cm9IWYEAsDHDHaSqG8Xu0-e5rTB8cvb9Cb0NXElsoChVlvxt31Avuf6iArYs9ELUY6pPxSVYDm1RTzi7lpTEKoY7oQuEeoSv8Ai9CPp9snwtEAMdmM440e1LJe3pLQCdRK4cFEX6k8DB3DLiuXDVtYAm3mr4z4hHi5uz2KHuGrX5rvP79uprGxDYiIcT_uJasu1A5o5uPjx1n0=",
+          "keysrt1": "8NKBTyN-34H8lVh2HxDv4mhRnsZ__5k8zfjf6hbrIu8=",
+          "keysrt2": "Ciix8PmX1IKRPQ7CiNTQeJ0WGlV7D2BBTVonrWno6fM=",
+          "keyapim1": "R6uy7IOeQj_byz3m4VpNqoyXp2PGtiVB63Oebthw3yY=",
+          "keyapim2": "DsED52aBHZ3I2lYe7uLqwc8aclN5LX1y67cUzsumq7w=",
+          "apimkey": "gAAAAABiHk2Lq0aBIAPszYzyBM4ORYU-nbKxItcCMv4zmTOo9NvCI_dXduy63BqKbIQCX_K08JSQ1EeaMu4_ZhcmEqHKEfnHzn16rPdpvB83fbsM0yzZF995pP3tajxBGl16Od2lApHan3IX9EN3wwY6J5_Vs05YIohm__AOclIEb73VdVBx-tv7OdScJVNyLyIsnoWB9xPYtOgN5w4w3AvOeyGAbnBv8vxvKOFSJrA7VaYaddMFIvJYM27QlNO4f54GvWZV4HSW",
+          "prod_sapim" : "gAAAAABkWNUuP9LkLLKNbaQmZvUxbY24cD336-_q8IFPR8gJ5TlLiYTzTHHXfEHlIU9nLqYo-pkZ3O0v8wEFbz_NvM1r-CzbxQ1PR_ZwTQmjP4z-rfmKokEdhyaVlgG7CMcrDZpNGA7RDYGvuKOT3rZ2KIUvgOd5RZ2vdVRqGjuC9VIIcAdwbmqgaKr6PpBL5uuYfmC496NPdGYKrulQfio7q_sQCJrie5L4her7rllzOAVy4hUaDpI7QK59Zt2a7TNLa32ChNn4",
+          "smart_config_aes_key" : "gAAAAABiOwqW7RJ15jm_kicOHmgvKgvf5nuT7SSNgglQcImm2f8KOklLzX0gfv3vxNr-M6Vms6CSrCdOZ9FFyIX8ufeSkdXftbbWvA4FvP8p7xjpoWWVnhdpLPWhpEVclpu3kk49ZSBuU4s-rx1L1DCg-XnLUHIFlp_G_v_uWRq-vtNdiuuZbHpd2VCLsWKsk8XyccsRQ0VgI8T8xD-UnPSUm6_adTSnsV8iJbxpteE9X13QOER9GB0NOr33R4WtXtUnM-xIlZ4o=",
+          "smart_config_aes256_iv": "gAAAAABiOwrjn3fuseJw9bnWSy-AXeT28xf0pjKQu62rg7Wn7BANwU_w3DnfpiL4sbVxW5_RzMFRXg-Ac1BKh4wHx8bl59zADtdNndVNvf6z3gBkxvj4sPWXs61GSp0pO4aUeHr5k7jKbYKclAip045YSJfn_1zFSkTzBC5ULwqdWyljivv_CfeXkgt6_BgJEJEPFtTj3xFTVtyCrK1tSnVl6VW0TazsgDE5OTQHWnysL2xv4RogQv0=",
+          "aes_key" : "e2VnjQdpNjOO5svMSZEpFtD_P1JEjW0HC4eTfhMF7j8=",
+          "target_msg_prefix" : "Havells:"
+
+
+
+
+        },
+
+        "MISCELLANEOUS": {
+            "HIFEMDNSTESTKEYSIZE": 128,
+            "HIFE_MDNS_SERVICE": "_hvls._tcp.local.",
+            "HIFE_ESP32_IP": "esp32ip.txt",
+            "HIFE_DEVID": "deviceid.txt",
+            "HUID_PREFIX": "Base64EncodedHuidPrefix",
+            "UUID_FILE": "/CommonIncludes/device_information.json",
+            "MDNS_FILE": "/CommonIncludes/configuration/mdns_parameters.json"
+        }
+    },
+    "PROD": {
+        "URL": "iot.havellsiot.com",
+        "PRODUCT_LIST": [
+            "smart_ac",
+            "smart_fan",
+            "smart_adonia",
+            "water_heater_droid",
+            "water_heater_v2_ac_type",
+            "trinity_fan",
+            "air_purifier",
+            "stealth_fan",
+            "carnesia_fan"
+        ],
+        "MQTT_SETTINGS": {
+            "HIFE_LOCALMODE_PORT": 8888,
+            "HIFE_MQTT_PORT": 8883,
+            "HIFE_MQTT_CA_CRT": "../gtest/hife-testconf/cert/ca.crt",
+            "HIFE_MQTT_CLIENT_CRT": "",
+            "HIFE_MQTT_CLIENT_KEY": ""
+        },
+        "IOT_HUB_SETTINGS": {
+            "IOT_HUB_CONNECTION_STRING": "HostName=AZR-PROD-IoTHub.azure-devices.net;SharedAccessKeyName=OTAWriteConfig;SharedAccessKey=ProdIoTHubSharedAccessKey"
+        },
+        "BLOB_STORAGE_SETTINGS": {
+            "STORAGE_ACCOUNT_NAME": "prodotasa",
+            "ACCOUNT_ACCESS_KEY": "ProdStorageAccountAccessKey",
+            "BLOB_CONNECTION_STRING": "DefaultEndpointsProtocol=https;AccountName=prodotasa;AccountKey=ProdStorageAccountAccessKey;EndpointSuffix=core.windows.net"
+        },
+        "USER_LOGIN_CREDENTIALS": {
+            "USER_1": "+917387342890",
+            "PASSWORD_1": "986040",
+            "USER_2": "+918765432109",
+            "PASSWORD_2": "123456"
+        },
+        "WIFI_SETTINGS": {
+            "INTERFACE": "wlp0s20f3",
+            "PASSWORD": "havells@12345",
+            "ESSID": "Validation",
+            "BSSID": "30:DE:4B:5B:6D:C0"
+        },
+        "KEYS": {
+          "keycid1": "TefuRRMZZMwdj_eRtXmuk8ofItc7CJltVirXJU4Qa0Y=",
+          "keycid2": "e1mz5NeVOj78GmP8z6J4VveY-fWZil6VUqq1DBj1Y3M=",
+          "cid": "gAAAAABiHfKgBQLH-qMtPV2ASPT-ZYJHuRa7hoRIga1bycmyGEHue0mNbpx65GH0Z7xtUBmEpLY66-AkyfNOKeydRmu50a8czXbO8N4kL3Li20nKFnVKdVFF69MHCST2S3OUXHbUavZwz-Yp9yqIwFAwtEjfpYpq9pIB6Jy_Wiem-ZeI9bywnbmGIHLoiz0kVAvtZQVUCzjqt7R-_WhrEXxo-U2ude-ew7_1iinP2jvQaK21ztZHaC4=",
+          "csrt": "gAAAAABiHfoFmvqVYyshnqoOgTxb4GvtnD7KJoh_NwoKKUbh5es6ATzVTutuf6SVrKYHvZ2f3Qgu48kLASI34Qk4nZ-lpjxiBP0I49mf8Cm9IWYEAsDHDHaSqG8Xu0-e5rTB8cvb9Cb0NXElsoChVlvxt31Avuf6iArYs9ELUY6pPxSVYDm1RTzi7lpTEKoY7oQuEeoSv8Ai9CPp9snwtEAMdmM440e1LJe3pLQCdRK4cFEX6k8DB3DLiuXDVtYAm3mr4z4hHi5uz2KHuGrX5rvP79uprGxDYiIcT_uJasu1A5o5uPjx1n0=",
+          "keysrt1": "8NKBTyN-34H8lVh2HxDv4mhRnsZ__5k8zfjf6hbrIu8=",
+          "keysrt2": "Ciix8PmX1IKRPQ7CiNTQeJ0WGlV7D2BBTVonrWno6fM=",
+          "keyapim1": "R6uy7IOeQj_byz3m4VpNqoyXp2PGtiVB63Oebthw3yY=",
+          "keyapim2": "DsED52aBHZ3I2lYe7uLqwc8aclN5LX1y67cUzsumq7w=",
+          "apimkey": "gAAAAABiHk2Lq0aBIAPszYzyBM4ORYU-nbKxItcCMv4zmTOo9NvCI_dXduy63BqKbIQCX_K08JSQ1EeaMu4_ZhcmEqHKEfnHzn16rPdpvB83fbsM0yzZF995pP3tajxBGl16Od2lApHan3IX9EN3wwY6J5_Vs05YIohm__AOclIEb73VdVBx-tv7OdScJVNyLyIsnoWB9xPYtOgN5w4w3AvOeyGAbnBv8vxvKOFSJrA7VaYaddMFIvJYM27QlNO4f54GvWZV4HSW",
+          "prod_sapim" : "gAAAAABkWNUuP9LkLLKNbaQmZvUxbY24cD336-_q8IFPR8gJ5TlLiYTzTHHXfEHlIU9nLqYo-pkZ3O0v8wEFbz_NvM1r-CzbxQ1PR_ZwTQmjP4z-rfmKokEdhyaVlgG7CMcrDZpNGA7RDYGvuKOT3rZ2KIUvgOd5RZ2vdVRqGjuC9VIIcAdwbmqgaKr6PpBL5uuYfmC496NPdGYKrulQfio7q_sQCJrie5L4her7rllzOAVy4hUaDpI7QK59Zt2a7TNLa32ChNn4",
+          "smart_config_aes_key" : "gAAAAABiOwqW7RJ15jm_kicOHmgvKgvf5nuT7SSNgglQcImm2f8KOklLzX0gfv3vxNr-M6Vms6CSrCdOZ9FFyIX8ufeSkdXftbbWvA4FvP8p7xjpoWWVnhdpLPWhpEVclpu3kk49ZSBuU4s-rx1L1DCg-XnLUHIFlp_G_v_uWRq-vtNdiuuZbHpd2VCLsWKsk8XyccsRQ0VgI8T8xD-UnPSUm6_adTSnsV8iJbxpteE9X13QOER9GB0NOr33R4WtXtUnM-xIlZ4o=",
+          "smart_config_aes256_iv": "gAAAAABiOwrjn3fuseJw9bnWSy-AXeT28xf0pjKQu62rg7Wn7BANwU_w3DnfpiL4sbVxW5_RzMFRXg-Ac1BKh4wHx8bl59zADtdNndVNvf6z3gBkxvj4sPWXs61GSp0pO4aUeHr5k7jKbYKclAip045YSJfn_1zFSkTzBC5ULwqdWyljivv_CfeXkgt6_BgJEJEPFtTj3xFTVtyCrK1tSnVl6VW0TazsgDE5OTQHWnysL2xv4RogQv0=",
+          "aes_key" : "e2VnjQdpNjOO5svMSZEpFtD_P1JEjW0HC4eTfhMF7j8=",
+          "target_msg_prefix" : "Havells:"
+
+        },
+        "MISCELLANEOUS": {
+            "HIFEMDNSTESTKEYSIZE": 128,
+            "HIFE_MDNS_SERVICE": "_hvls._tcp.local.",
+            "HIFE_ESP32_IP": "esp32ip.txt",
+            "HIFE_DEVID": "deviceid.txt",
+            "HUID_PREFIX": "Base64EncodedHuidPrefix",
+            "UUID_FILE": "/CommonIncludes/device_information.json",
+            "MDNS_FILE": "/CommonIncludes/configuration/mdns_parameters.json"
+        }
+    }
+}

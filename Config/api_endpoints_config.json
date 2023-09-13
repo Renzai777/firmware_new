@@ -1,0 +1,68 @@
+{
+  "GET_Request_APIs": [
+    {
+      "deviceStatusAPI": {
+        "QA": {
+          "url": "/mobile/getCurrentStatusOfDevice?deviceId=",
+          "type": "GET"
+        },
+        "PROD": {
+          "url": "/mobile/getCurrentStatusOfDevice?deviceId=",
+          "type": "GET"
+        }
+      }
+    }
+  ],
+  "POST_Request_APIs": [
+    {
+      "loginAPI": {
+        "QA": {
+          "url": "/user/v1/userlogin",
+          "type": "POST"
+        },
+        "PROD": {
+          "url": "/user/userlogin",
+          "type": "POST"
+        }
+      }
+    },
+    {
+      "addDeviceToUserAPI": {
+        "QA": {
+          "url": "/mobile/addDeviceToUser",
+          "type": "POST"
+        },
+        "PROD": {
+          "url": "/mobile/addDeviceToUser",
+          "type": "POST"
+        }
+      }
+    },
+    {
+      "directMethodAPI": {
+        "QA": {
+          "url": "deviceMgmt/v1/device_id/control",
+          "type": "POST"
+        },
+        "PROD": {
+          "url": "deviceMgmt/v1/device_id/control",
+          "type": "POST"
+        }
+      }
+    }
+  ],
+  "DELETE_Request_APIs": [
+    {
+      "deleteDeviceFromUserAPI": {
+        "QA": {
+          "url": "/mobile/deleteDeviceFromUser?deviceId=",
+          "type": "DELETE"
+        },
+        "PROD": {
+          "url": "/mobile/deleteDeviceFromUser?deviceId=",
+          "type": "DELETE"
+        }
+      }
+    }
+  ]
+}

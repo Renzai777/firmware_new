@@ -1,0 +1,47 @@
+{
+    "MDNS_DETAILS": {
+        "TouchSw4ChV1_192.168.0.100": {
+            "addresses": "192.168.0.100",
+            "DeviceCapabilities": "17",
+            "UserId": "0c71ea74-f50d-469d-9f62-a70fe113cd02",
+            "HUID": "0128090008002B3000A30C630000184F703C40954",
+            "device_mcu": "esp32s2",
+            "ProductCode": "TouchSw4ChV1",
+            "ModelName": "Touch Switch",
+            "BrandName": "Crabtree",
+            "ProductType": "Touch Switch"
+        },
+        "HFanV1_192.168.1.100": {
+            "addresses": "192.168.1.100",
+            "DeviceCapabilities": "1",
+            "Var": "qa",
+            "DvcFWver": "0.8",
+            "DvcFrWVer": "2.1.9",
+            "HUID": "63DA0043EC70649000910C6300001E89F6D551108",
+            "device_mcu": "esp32",
+            "ProductCode": "HFanV1",
+            "ModelName": "HaloFan",
+            "BrandName": "Havells",
+            "ProductType": "HaloFan",
+            "UserId": "dc89828f-a3d8-4e02-a1b0-e0d49435f313"
+        },
+        "TFanV1_192.168.1.101": {
+            "addresses": "192.168.1.101",
+            "DeviceCapabilities": "17",
+            "Var": "qa",
+            "DvcFWver": "2.0.6",
+            "DvcFrWVer": "2.1.9",
+            "HUID": "45CA0043EC70649000910C6300001782184D6F270",
+            "device_mcu": "esp32",
+            "ProductCode": "TFanV1",
+            "ModelName": "Trinity",
+            "BrandName": "Havells",
+            "ProductType": "Fan",
+            "UserId": ""
+        }
+    },
+    "DEVICE_IDS": {
+        "AdoniaWHV2": "63DA0043EC70649000910C6300001C4DEE20B91CC"
+    },
+    "ACCESS_TOKEN": "eyJraWQiOiJFZ3hwYnQxMFNoWU11VnpHaktKdVBSRCtodXJQNWplOElMQjc0ZFkydG5vPSIsImFsZyI6IlJTMjU2In0.eyJzdWIiOiI5MTgxYTRiOS05OTAxLTQ1NTgtOTYxNC1hN2M3MTdjNjgzOGQiLCJkZXZpY2Vfa2V5IjoiYXAtc291dGgtMV9iM2E3MTRjMy1iY2RiLTQ2NTUtOGFhYS02NWI0ZTc4NDY2NTAiLCJpc3MiOiJodHRwczpcL1wvY29nbml0by1pZHAuYXAtc291dGgtMS5hbWF6b25hd3MuY29tXC9hcC1zb3V0aC0xX0c5a1ozSnFIRiIsImNsaWVudF9pZCI6IjFwc2N1MzU3M3ZuYzVnNnNlZ20wazlsaGk4Iiwib3JpZ2luX2p0aSI6IjQyOWY5ZjQ4LWZhMGItNGZjYi1hMWM3LTNkOGU0MjQ1MWYxNyIsInRva2VuX3VzZSI6ImFjY2VzcyIsInNjb3BlIjoiYXdzLmNvZ25pdG8uc2lnbmluLnVzZXIuYWRtaW4iLCJhdXRoX3RpbWUiOjE2OTQxNTQ1ODcsImV4cCI6MTY5NDE1NTE4NywiaWF0IjoxNjk0MTU0NTg3LCJqdGkiOiI4YzY2YjU2ZS0xODE4LTQ2YzUtODg4MC1mNmJhMDMzZGY2NzUiLCJ1c2VybmFtZSI6IjkxODFhNGI5LTk5MDEtNDU1OC05NjE0LWE3YzcxN2M2ODM4ZCJ9.IwcMeFxoRxFplyFkkYVtArHEjrDwvikRqHgCAdsbUIu80PEtgso1-dba4KCH6BLv8DbkANeYxU-5KGs0nIMaVQueXz_oen4C94YPbcjbWmzrQoAz_p-MYyv9J-7Ibc5naQ2H5tr05VLq_-AifGFwoQgbIDGB56p4wph-o7BQ0zcttiPNF5scMBL4P8ivnwlzAUN1YZJa3oTKIQwLSTsbFqK6InClUPdeNi0GDQaTbxAXTZTKnZULVW_88ai1tCsREO96jLr5CPvyV5MPTQ4QapX7g---OJjRnvxBaFVjz9BXVgp831l6syiVzhh80uvFDhPNl6l9BSWY6olP8etnPQ"
+}
