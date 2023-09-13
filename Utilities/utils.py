@@ -321,6 +321,29 @@ class CommonMethod:
         except Exception as e:
             print("error in compare_telemetry method : ".format(e))
 
+    @staticmethod
+    def find_key_value_pairs(sent_command, received_data):
+        if isinstance(sent_command, str):
+            sent_command = json.loads(sent_command)
+
+        result = {}
+
+        def recursive_search(command_dict, data_dict, result_dict):
+            for key, value in command_dict.items():
+                if key in data_dict:
+                    if isinstance(value, dict):
+                        result_dict[key] = {}
+                        recursive_search(value, data_dict[key], result_dict[key])
+                    else:
+                        if value == data_dict[key]:
+                            result_dict[key] = value
+                        else:
+                            result_dict[key] = data_dict[key]
+
+        recursive_search(sent_command, received_data, result)
+
+        return result
+
 
 
 

@@ -1,8 +1,8 @@
-import json
 import pytest
 from Library.tcp_communication import TcpWrap
 from Library.cloud_api import ApiClient
 from Utilities.utils import Config ,FileManager
+from py.xml import html
 
 
 @pytest.fixture(scope='session')
@@ -31,10 +31,10 @@ def tcp_client_factory():
                 teardown_status = f'Failed: {e}'
     return make_tcp_client
 
+
 @pytest.fixture(scope='session')
 def common_tcp_client(tcp_client_factory):
-    with open("config.json", "r") as f:
-        config_data = json.load(f)
+    config_data = FileManager.manage_file("config.json", "r")
     ip = config_data['tcp_client']['ip']
     return next(tcp_client_factory(ip))
 
@@ -45,9 +45,7 @@ def api_client_fixture():
     api_client = None
 
     try:
-        # Read from your config.json
-        with open("config.json", "r") as f:
-            config_data = json.load(f)
+        config_data = FileManager.manage_file("config.json", "r")
 
         environment = config_data['api_client_fixture']['environment']
         username = config_data['api_client_fixture']['username']
@@ -68,14 +66,46 @@ def api_client_fixture():
         except Exception as e:
             pass
 
+
 @pytest.fixture(scope='session')
 def common_api_client(api_client_fixture):
-    # Read from your config.json
-    with open("config.json", "r") as f:
-        config_data = json.load(f)
+    config_data = FileManager.manage_file("config.json", "r")
 
     device_id = config_data['api_client_fixture']['device_id']
     setup_status, api_client = api_client_fixture  # directly use api_client_fixture
 
     yield setup_status, api_client, device_id
+
+
+@pytest.mark.optionalhook
+def pytest_html_results_table_header(cells):
+    cells.insert(2, html.th("Fixture"))
+    cells.insert(3, html.th("Setup Status"))
+    cells.insert(4, html.th("Teardown Status"))
+
+@pytest.mark.optionalhook
+def pytest_html_results_table_row(report, cells):
+    cells.insert(2, html.td(report.fixture))
+    cells.insert(3, html.td(report.setup_status))
+    cells.insert(4, html.td(report.teardown_status))
+
+
+@pytest.mark.hookwrapper
+def pytest_runtest_makereport(item, call):
+    outcome = yield
+    report = outcome.get_result()
+
+    if 'tcp_client' in item.funcargs:
+        setup_status, _ = item.funcargs['tcp_client']
+        report.setup_status = setup_status
+        report.fixture = 'tcp_client'
+    elif 'api_client_fixture' in item.funcargs:
+        setup_status, _ = item.funcargs['api_client_fixture']
+        report.setup_status = setup_status
+        report.fixture = 'api_client_fixture'
+    else:
+        report.setup_status = 'N/A'
+        report.fixture = 'None'
+
+    report.teardown_status = 'Teardown successful'
 

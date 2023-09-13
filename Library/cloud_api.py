@@ -172,7 +172,6 @@ class ApiClient(HttpClient):
         if response_data.get("message") == "success":
             try:
                 data = response_data["data"]["telemetry"]["data"]["message"]
-                print(f"Data : {data}")
                 return data
             except KeyError:
                 return None

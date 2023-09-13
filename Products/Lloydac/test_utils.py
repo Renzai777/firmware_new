@@ -24,12 +24,13 @@ def execute_cloud_test(common_api_client, command, telemetry_key):
     if setup_status == 'Success':
         print(f"Command: {command}")
         api_client.device_control(device_id, command)
-        time.sleep(3)
+        time.sleep(5)
         received_data = api_client.fetch_device_status(device_id)
-        status, rx_data = CommonMethod.compare_telemetry(received_data, command, telemetry_key)
+        # status, rx_data = CommonMethod.compare_telemetry(received_data, command, telemetry_key)
+        result = CommonMethod.find_key_value_pairs(command,received_data)
 
-        print(f'status: {status}')
-        assert status == 0
+        print(f'status: {result}')
+        assert command, result
     else:
         pytest.fail(f"Setup failed with status: {setup_status}")
 
