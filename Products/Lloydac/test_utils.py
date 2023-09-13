@@ -18,8 +18,8 @@ def execute_test_tcp(tcp_client, command_key, telemetry_key):
         pytest.fail(f"Setup failed with status: {setup_status}")
 
 
-def execute_cloud_test(api_client_tuple, command, telemetry_key):
-    setup_status, api_client, device_id = api_client_tuple  # Unpacking to include device_id
+def execute_cloud_test(common_api_client, command, telemetry_key):
+    setup_status, api_client, device_id = common_api_client  # Unpacking here
 
     if setup_status == 'Success':
         print(f"Command: {command}")
@@ -32,3 +32,4 @@ def execute_cloud_test(api_client_tuple, command, telemetry_key):
         assert status == 0
     else:
         pytest.fail(f"Setup failed with status: {setup_status}")
+
